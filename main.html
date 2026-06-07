@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rəngarəng Tort Dünyası - Tam Versiya</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Naviqasiya Paneli -->
+  <header>
+    <div class="logo">🌈 <span>Tort</span> Dünyası 🎂</div>
+    <nav>
+      <a href="#reseptler" class="nav-link">✨ Bütün Reseptlər</a>
+      <a href="#canli-yayim" class="nav-link">🎥 Canlı Yayım</a>
+      <a href="#profil" class="nav-link">👤 Profil Yarat</a>
+      <a href="#logo-creator" class="nav-link">🎨 Loqo Yarat</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1. DÜNYANIN BÜTÜN MƏŞHUR TORTLARI BÖLMƏSİ -->
+    <section id="reseptler" class="section">
+      <h2>🍰 Dünyanın Ən Məşhur və Dadlı Tortları</h2>
+      <p class="info-text">(Geniş resepti, ərzaqları və hazırlanma qaydasını görmək üçün istənilən torta klikləyin! 👇)</p>
+      <div class="recipe-grid">
+        <div class="card c-choco" data-cake="choco">
+          <h3>🍫 Şokoladlı Nağıl</h3>
+          <p>Bol tünd şokoladlı və şəkər dənəcikləri ilə bəzədilmiş biskvit.</p>
+        </div>
+        <div class="card c-berry" data-cake="berry">
+          <h3>🍓 Çiyələkli Arzular</h3>
+          <p>Zərif çəhrayı krem və təzə çiyələklərin harmoniyası.</p>
+        </div>
+        <div class="card c-rainbow" data-cake="rainbow">
+          <h3>🌈 Göyqursağı Tortu</h3>
+          <p>Hər qatı fərqli rəngdə olan vizual festival tortu.</p>
+        </div>
+        <div class="card c-honey" data-cake="honey">
+          <h3>🍯 Ballı Tort (Medovik)</h3>
+          <p>Nazik ballı qatların incə qaymaqlı kremlə unikal qovuşması.</p>
+        </div>
+        <div class="card c-tiramisu" data-cake="tiramisu">
+          <h3>☕ Tiramisu</h3>
+          <p>Qəhvə ətirli, maskarpone kremli İtalyan əfsanəsi.</p>
+        </div>
+        <div class="card c-cheesecake" data-cake="cheesecake">
+          <h3>🍋 Limonlu Çizkeyk</h3>
+          <p>Altı xırtıldayan biskvit, üstü zərif bişmiş kəsmik kremi.</p>
+        </div>
+        <div class="card c-snickers" data-cake="snickers">
+          <h3>🥜 Snikers Tortu</h3>
+          <p>Bol araxis (fıstıq), axıcı karamel və şokolad qatları.</p>
+        </div>
+        <div class="card c-napoleon" data-cake="napoleon">
+          <h3>🥮 Napoleon Tortu</h3>
+          <p>Xırda-xırda tökülən minqat xəmir və bişmiş vanilli krem.</p>
+        </div>
+        <div class="card c-bounty" data-cake="bounty">
+          <h3>🥥 Baunti Tortu</h3>
+          <p>Kokoslu içlik və tünd şokolad qlazurunun tropik dadı.</p>
+        </div>
+        <div class="card c-redvelvet" data-cake="redvelvet">
+          <h3>❤️ Qırmızı Məxmər</h3>
+          <p>Zərif qırmızı biskvit və ağ rəngli labne kreminin kontrastı.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. CANLI YAYIM BÖLMƏSİ -->
+    <section id="canli-yayim" class="section">
+      <h2>🔮 Canlı Mətbəx Seansı</h2>
+      <p class="info-text">Efirə qoşulun, sehrli reseptlərinizi canlı olaraq dünya ilə bölüşün!</p>
+      <div class="video-outer-container">
+        <div class="video-container">
+          <video id="live-video" autoplay playsinline muted></video>
+          <div id="live-indicator" class="hidden">● CANLI YAYIM</div>
+        </div>
+      </div>
+      <br>
+      <button id="start-stream-btn">🚀 Efiri Başlat</button>
+    </section>
+
+    <!-- 3. PROFİL BÖLMƏSİ -->
+    <section id="profil" class="section">
+      <h2>👤 Şirniyyatçı Profilini Yarat</h2>
+      <p class="info-text">Öz rəngli dünyanı qur və reseptlərini paylaşmağa başla!</p>
+      <form id="profile-form">
+        <input type="text" placeholder="✨ Adınız və Soyadınız" required>
+        <input type="email" placeholder="📧 E-poçt ünvanınız" required>
+        <input type="password" placeholder="🔒 Şirin bir şifrə seçin" required>
+        <button type="submit" id="register-btn">Yaradıcılığa Başla 🎉</button>
+      </form>
+    </section>
+
+    <!-- 4. LOQO YARADICI BÖLMƏSİ -->
+    <section id="logo-creator" class="section logo-section">
+      <h2>🎨 Öz Şirniyyatçı Loqonu Dizayn Et</h2>
+      <p class="info-text">Mətni yazın və rəng seçənlərə basaraq loqonu canlı dəyişdirin!</p>
+      <div class="creator-container">
+        <div class="logo-controls">
+          <label>✍️ Loqo Mətni:</label>
+          <input type="text" id="logo-text-input" value="Mənim Şirin Dünyam" placeholder="Bura yazın...">
+
+          <label>🧁 İkon Seçin:</label>
+          <select id="logo-icon-select">
+            <option value="🎂">🎂 Ad günü Tortu</option>
+            <option value="🧁">🧁 Keks (Cupcake)</option>
+            <option value="🍩">🍩 Donat</option>
+            <option value="🍓">🍓 Çiyələk</option>
+            <option value="👑">👑 Kral Tacı</option>
+          </select>
+
+          <!-- Yenilənmiş Modern Rəng Seçicilər -->
+          <label>🎨 Arxa Fon Rəngi Seç:</label>
+          <div class="color-picker-wrapper">
+            <input type="color" id="logo-bg-picker" value="#ff758c">
+            <span>Rəng Palitrasını Aç</span>
+          </div>
+
+          <label>🔤 Yazı Rəngi Seç:</label>
+          <div class="color-picker-wrapper">
+            <input type="color" id="logo-text-picker" value="#ffffff">
+            <span>Rəng Palitrasını Aç</span>
+          </div>
+        </div>
+
+        <div class="logo-preview-box">
+          <div id="generated-logo" class="live-logo-preview" style="background-color: #ff758c;">
+            <div id="logo-preview-icon" class="preview-icon">🎂</div>
+            <div id="logo-preview-text" class="preview-text" style="color: #ffffff;">Mənim Şirin Dünyam</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Hər Bir Torta Özəl Rəngdə Açılacaq Gizli Resept Pəncərəsi (Modal) -->
+  <div id="recipe-modal" class="modal hidden-modal">
+    <div id="modal-card" class="modal-content">
+      <span id="close-modal-btn" class="close-btn">&times;</span>
+      <h2 id="modal-title">Tort Adı</h2>
+      <div class="modal-body">
+        <h3>🛒 Lazım olanlar:</h3>
+        <ul id="modal-ingredients"></ul>
+        <h3>👩‍🍳 Hazırlanması:</h3>
+        <p id="modal-steps"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
